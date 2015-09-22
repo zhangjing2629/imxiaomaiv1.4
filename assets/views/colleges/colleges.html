@@ -1,0 +1,5 @@
+<li ng-if="!countrylist.length">该城市还没有相关学校</li>
+<li ng-repeat="country in countrylist">
+    <p class="countryname">{{country.cityName}}</p>
+    <div class="" ng-repeat="college in country.colleges" ng-click="checkCollege(college)">{{college.collegeName}}</div>
+</li>
